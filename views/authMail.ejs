@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ユーザー登録 Step3</title>
+</head>
+
+<body>
+  <h2>ユーザー登録 Step3</h2>
+  
+</body>
+  <form action="/authMail" method="POST">
+    <input type="text" name="email" placeholder="Email" value="<%=mail %>" disabled/>
+    <input type="password" name="password" placeholder="Password"/>
+    <input type="text" name="name" placeholder="お名前"/>
+    <input type="hidden" value="<%-auth %>"/>
+    <input type="submit">使いはじめる</button>
+  </form>
+</html>
